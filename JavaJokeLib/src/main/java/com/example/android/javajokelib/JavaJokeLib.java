@@ -1,5 +1,6 @@
 package com.example.android.javajokelib;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class JavaJokeLib {
 
     public String setUpJoke(){

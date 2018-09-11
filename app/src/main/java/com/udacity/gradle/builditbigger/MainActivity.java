@@ -10,9 +10,8 @@ import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import com.example.android.javajokelib.JavaJokeLib;
+
 import com.example.android.androidjokelib.JokeActivity;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -65,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         mEndpointTask.execute(new Pair(this, ""));
     }
 
-    //TODO implement this and fix the server number!
+
     public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
         private MyApi myApiService = null;
         private Context context;
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         .setRootUrl("http://10.0.2.2:8080/_ah/api/")
                         .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                             @Override
-                            public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
+                            public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) {
                                 abstractGoogleClientRequest.setDisableGZipContent(true);
                             }
                         });
