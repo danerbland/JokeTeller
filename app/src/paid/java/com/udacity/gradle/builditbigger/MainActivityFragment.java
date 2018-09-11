@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 import com.example.android.javajokelib.JavaJokeLib;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 
 /**
